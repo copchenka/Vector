@@ -101,7 +101,7 @@ public class Vector {
         return (int) sqrt(v1.dotProduct(v1));
     }
 
-    public static Vector vectormult(Vector v1, Vector v2) throws FileNotFoundException { //векторное произведение трехмерных векторов
+    public static Vector vectormult(Vector v1, Vector v2) throws FileNotFoundException {  //векторное произведение трехмерных векторов
         Vector result = new Vector(3);
         if ((v1.getCount() == 3) && (v2.getCount() == 3)) {
             int x = v1.getValue(1) * v2.getValue(2) - v1.getValue(2) * v2.getValue(1);
